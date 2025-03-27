@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片预览</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        #demo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        #demo img {
+            display: block;
+            width: fit-content;
+            height: fit-content; 
+            max-width: 33vw;
+            max-height: 50vh;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transform-origin: center;
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transform-style: preserve-3d;
+        }
+        
+        #demo :is(img:hover, img:focus) {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px) rotateX(5deg) rotate(1deg) scale(1.02);
+            z-index: 10;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <img src="/imgs/4001.f8af31.png" />
+        <img src="/imgs/AMIYA.4e319d.png" />
+        <img src="/imgs/AMIYA.ad3ec4.png" />
+        <img src="/imgs/ANGELINA.b02e74.png" />
+        <img src="/imgs/ANGELINA.ed1076.png" />
+        <img src="/imgs/arrow.2b65a8.png" />
+        <img src="/imgs/arrow_B.185c67.png" />
+        <img src="/imgs/award-active.74cc3c.png" />
+        <img src="/imgs/award-normal.8ad010.png" />
+        <img src="/imgs/bg.0e3084.png" />
+        <img src="/imgs/bg.19d3cb.png" />
+        <img src="/imgs/bg.47ab29.png" />
+        <img src="/imgs/bg.4e181d.png" />
+        <img src="/imgs/bg.50aad0.png" />
+        <img src="/imgs/bg.565d2a.png" />
+        <img src="/imgs/bg.5834f7.png" />
+        <img src="/imgs/bg.691851.png" />
+        <img src="/imgs/bg.8b3e89.png" />
+        <img src="/imgs/bg.8d04cf.png" />
+        <img src="/imgs/bg_A.0f2a24.png" />
+        <img src="/imgs/bg.a164ef.png" />
+        <img src="/imgs/bg_A.27fe77.png" />
+        <img src="/imgs/bg_A.47be56.png" />
+        <img src="/imgs/bg.a57bc4.png" />
+        <img src="/imgs/bg_A.76ab44.png" />
+        <img src="/imgs/bg_A.7e2a4e.png" />
+        <img src="/imgs/bg_A.a0c882.png" />
+        <img src="/imgs/bg.aa57c8.png" />
+        <img src="/imgs/bg.aabda3.png" />
+        <img src="/imgs/bg_A.b67be7.png" />
+        <img src="/imgs/bg_B.18595c.png" />
+        <img src="/imgs/bg_B.62cc98.png" />
+        <img src="/imgs/bg_B.6f3d52.png" />
+        <img src="/imgs/bg_B.c36092.png" />
+        <img src="/imgs/bg_B.c7b5dd.png" />
+        <img src="/imgs/bg_B.da498b.png" />
+        <img src="/imgs/bg_B.df4afc.png" />
+        <img src="/imgs/bg_C.51c464.png" />
+        <img src="/imgs/bg_C.7e4497.png" />
+        <img src="/imgs/bg_C.90b860.png" />
+        <img src="/imgs/bg_C.acdbd5.png" />
+        <img src="/imgs/bg_C.b275ce.png" />
+        <img src="/imgs/bg_C.dfd57c.png" />
+        <img src="/imgs/bg_C.e92659.png" />
+        <img src="/imgs/bg.d09b55.png" />
+        <img src="/imgs/bg_D.3077e6.png" />
+        <img src="/imgs/bg.d708c8.png" />
+        <img src="/imgs/bg_D.847122.png" />
+        <img src="/imgs/bg_D.96f9d9.png" />
+        <img src="/imgs/bg.d9df39.png" />
+        <img src="/imgs/bg_D.ac5d5f.png" />
+        <img src="/imgs/bg_D.cf28f5.png" />
+        <img src="/imgs/bg_D.e52c6d.png" />
+        <img src="/imgs/bg_D.e735de.png" />
+        <img src="/imgs/bg.e43c92.png" />
+        <img src="/imgs/bg.e6a1d5.png" />
+        <img src="/imgs/bg.f71561.png" />
+        <img src="/imgs/BLAZE.0bb0c0.png" />
+        <img src="/imgs/BLAZE.83be71.png" />
+        <img src="/imgs/bracket_left_A.405fee.png" />
+        <img src="/imgs/bracket_left_B.31da24.png" />
+        <img src="/imgs/bracket_left_C.74d785.png" />
+        <img src="/imgs/bracket_left_D.a9fb9c.png" />
+        <img src="/imgs/bracket_right_A.a9c938.png" />
+        <img src="/imgs/bracket_right_B.d4d29c.png" />
+        <img src="/imgs/bracket_right_C.d7c029.png" />
+        <img src="/imgs/bracket_right_D.4ffb96.png" />
+        <img src="/imgs/btn-close.354dab.png" />
+        <img src="/imgs/btn-primary.38f0d3.png" />
+        <img src="/imgs/buff_icon_AMIYA.51449d.png" />
+        <img src="/imgs/buff_icon_ANGELINA.f932ec.png" />
+        <img src="/imgs/buff_icon_BLAZE.45bcb8.png" />
+        <img src="/imgs/buff_icon_CHEN.aa8069.png" />
+        <img src="/imgs/buff_icon_EBENHOLZ.805595.png" />
+        <img src="/imgs/buff_icon_ELYSIUM.f389ea.png" />
+        <img src="/imgs/buff_icon_LAPLUMA.27e84e.png" />
+        <img src="/imgs/buff_icon_LAPPLAND.a2cdc6.png" />
+        <img src="/imgs/buff_icon_LOGOS.1c168b.png" />
+        <img src="/imgs/buff_icon_MOSTIMA.1b373e.png" />
+        <img src="/imgs/buff_icon_MUELSYSE.166076.png" />
+        <img src="/imgs/buff_icon_NYMPH.9dcd67.png" />
+        <img src="/imgs/buff_icon_ROSMONTIS.cb662e.png" />
+        <img src="/imgs/buff_icon_SHU.d9f031.png" />
+        <img src="/imgs/buff_icon_SILENCE.1ea3a9.png" />
+        <img src="/imgs/buff_icon_SPECTER.930941.png" />
+        <img src="/imgs/buff_icon_SURTR.d5b9c7.png" />
+        <img src="/imgs/buff_icon_THORNS.e76628.png" />
+        <img src="/imgs/buff_icon_VULPISFOGLIA.3444a9.png" />
+        <img src="/imgs/buff_icon_ZUOLE.09ddd1.png" />
+        <img src="/imgs/button_buff.411f82.png" />
+        <img src="/imgs/button_collection.ca97ce.png" />
+        <img src="/imgs/button_reset.1fad2b.png" />
+        <img src="/imgs/CHEN.2525db.png" />
+        <img src="/imgs/CHEN.5eb972.png" />
+        <img src="/imgs/cleaner.5a0344.png" />
+        <img src="/imgs/cook.c31b78.png" />
+        <img src="/imgs/copyright.b3c170.png" />
+        <img src="/imgs/corner.dee23c.png" />
+        <img src="/imgs/deco1.8e5c2d.png" />
+        <img src="/imgs/deco2.28fa3b.png" />
+        <img src="/imgs/deco3.1eecf7.png" />
+        <img src="/imgs/deco4.17e29e.png" />
+        <img src="/imgs/EBENHOLZ.3cbdac.png" />
+        <img src="/imgs/EBENHOLZ.cddc10.png" />
+        <img src="/imgs/ELYSIUM.393fb7.png" />
+        <img src="/imgs/ELYSIUM.dbefa2.png" />
+        <img src="/imgs/entrance.815c26.png" />
+        <img src="/imgs/entrance_blur.995a0d.png" />
+        <img src="/imgs/exit.1f2f91.png" />
+        <img src="/imgs/hall.b95183.png" />
+        <img src="/imgs/hall_blur.045127.png" />
+        <img src="/imgs/home.651f08.png" />
+        <img src="/imgs/home_blur.256a34.png" />
+        <img src="/imgs/home-no-role.5b8cda.png" />
+        <img src="/imgs/home-start.6b6e52.png" />
+        <img src="/imgs/home-title.c51f29.png" />
+        <img src="/imgs/icon_sanity.89c3ea.png" />
+        <img src="/imgs/illust.08250d.png" />
+        <img src="/imgs/illust.198e13.png" />
+        <img src="/imgs/illust.1edb3a.png" />
+        <img src="/imgs/illust.36a48e.png" />
+        <img src="/imgs/illust.4251f9.png" />
+        <img src="/imgs/illust.483107.png" />
+        <img src="/imgs/illust.5548f0.png" />
+        <img src="/imgs/illust.6269ce.png" />
+        <img src="/imgs/illust.8b31f6.png" />
+        <img src="/imgs/illust.8cf5ac.png" />
+        <img src="/imgs/illust.91f575.png" />
+        <img src="/imgs/illust.933a71.png" />
+        <img src="/imgs/illust.9551f3.png" />
+        <img src="/imgs/illust.abb2c6.png" />
+        <img src="/imgs/illust.af6522.png" />
+        <img src="/imgs/illust.b0b420.png" />
+        <img src="/imgs/illust.bff167.png" />
+        <img src="/imgs/illust.c40b90.png" />
+        <img src="/imgs/illust.c9c367.png" />
+        <img src="/imgs/illust.cb7aaa.png" />
+        <img src="/imgs/illust.d30b4c.png" />
+        <img src="/imgs/illust.dcd5f4.png" />
+        <img src="/imgs/illust.e0ae7c.png" />
+        <img src="/imgs/illust.e29adb.png" />
+        <img src="/imgs/illust.f3c7bb.png" />
+        <img src="/imgs/illust.f76c08.png" />
+        <img src="/imgs/info_highlight.5af0a8.png" />
+        <img src="/imgs/info_panel.b69683.png" />
+        <img src="/imgs/LAPLUMA.0bbf75.png" />
+        <img src="/imgs/LAPLUMA.cddced.png" />
+        <img src="/imgs/LAPPLAND.10a100.png" />
+        <img src="/imgs/LAPPLAND.1e8b1a.png" />
+        <img src="/imgs/large_bracket_left_A.f1576a.png" />
+        <img src="/imgs/large_bracket_left_B.288732.png" />
+        <img src="/imgs/large_bracket_left_C.99cb99.png" />
+        <img src="/imgs/large_bracket_left_D.fa8f73.png" />
+        <img src="/imgs/large_bracket_right_A.9c7998.png" />
+        <img src="/imgs/large_bracket_right_B.dc1e36.png" />
+        <img src="/imgs/large_bracket_right_C.778290.png" />
+        <img src="/imgs/large_bracket_right_D.8cec86.png" />
+        <img src="/imgs/light-back.879ae0.png" />
+        <img src="/imgs/light-front.a6b4b3.png" />
+        <img src="/imgs/logo.f37e8c.png" />
+        <img src="/imgs/LOGOS.5e993f.png" />
+        <img src="/imgs/LOGOS.cf2797.png" />
+        <img src="/imgs/logo-title.2d02c8.png" />
+        <img src="/imgs/manpower_negative.1216f2.png" />
+        <img src="/imgs/manpower_positive.d1e8d8.png" />
+        <img src="/imgs/map.52200c.png" />
+        <img src="/imgs/map_blur.b3e559.png" />
+        <img src="/imgs/mask1.96b6bf.png" />
+        <img src="/imgs/mask2.66330a.png" />
+        <img src="/imgs/mask3.09a006.png" />
+        <img src="/imgs/mask4.5e46c0.png" />
+        <img src="/imgs/mask5.0e835d.png" />
+        <img src="/imgs/modal_tab.722ca7.png" />
+        <img src="/imgs/modal_tab_B.ca28aa.png" />
+        <img src="/imgs/MOSTIMA.4202bf.png" />
+        <img src="/imgs/MOSTIMA.924b77.png" />
+        <img src="/imgs/MUELSYSE.64c0a8.png" />
+        <img src="/imgs/MUELSYSE.f36012.png" />
+        <img src="/imgs/name.12d73f.png" />
+        <img src="/imgs/name.263851.png" />
+        <img src="/imgs/name.40004d.png" />
+        <img src="/imgs/name.418daf.png" />
+        <img src="/imgs/name.42547b.png" />
+        <img src="/imgs/name.44da66.png" />
+        <img src="/imgs/name.4c3400.png" />
+        <img src="/imgs/name.4d6694.png" />
+        <img src="/imgs/name.51b5eb.png" />
+        <img src="/imgs/name.7b7ebc.png" />
+        <img src="/imgs/name.7e9555.png" />
+        <img src="/imgs/name.9caaea.png" />
+        <img src="/imgs/name.a4ab01.png" />
+        <img src="/imgs/name.a61650.png" />
+        <img src="/imgs/name.ad4ee2.png" />
+        <img src="/imgs/name.b27f5a.png" />
+        <img src="/imgs/name.b4405e.png" />
+        <img src="/imgs/name.b50ae2.png" />
+        <img src="/imgs/name.bbd09a.png" />
+        <img src="/imgs/name.c15a77.png" />
+        <img src="/imgs/name.c9cfad.png" />
+        <img src="/imgs/name.d693af.png" />
+        <img src="/imgs/name.daafef.png" />
+        <img src="/imgs/name.e45089.png" />
+        <img src="/imgs/name.f85711.png" />
+        <img src="/imgs/name.ffd31a.png" />
+        <img src="/imgs/no_buff.0443da.png" />
+        <img src="/imgs/no-score-deco.0a3812.png" />
+        <img src="/imgs/nothing.45a853.png" />
+        <img src="/imgs/NYMPH.4e4acf.png" />
+        <img src="/imgs/NYMPH.592bed.png" />
+        <img src="/imgs/optionA.7f5880.png" />
+        <img src="/imgs/optionA_primary.6dd386.png" />
+        <img src="/imgs/optionA_secondary.1b4ab4.png" />
+        <img src="/imgs/optionB.4787d3.png" />
+        <img src="/imgs/optionB_primary.2f382b.png" />
+        <img src="/imgs/optionB_secondary.4b4f84.png" />
+        <img src="/imgs/passersby.03db52.png" />
+        <img src="/imgs/portal_entrance.42dd1c.png" />
+        <img src="/imgs/portal_hall.679042.png" />
+        <img src="/imgs/portal_signwall.fcffb4.png" />
+        <img src="/imgs/portal_staircase.c3db14.png" />
+        <img src="/imgs/poster_entrance.d3b1c0.png" />
+        <img src="/imgs/poster_hall.b00e2c.png" />
+        <img src="/imgs/poster_signwall.75563e.png" />
+        <img src="/imgs/poster_staircase.2ac2cb.png" />
+        <img src="/imgs/real-good.4cc42c.png" />
+        <img src="/imgs/result-already-flag.3be829.png" />
+        <img src="/imgs/result-fail-bg.802446.png" />
+        <img src="/imgs/result-home-btn.d2b036.png" />
+        <img src="/imgs/result-lottery-btn.f890c3.png" />
+        <img src="/imgs/result-restart-btn.f150e6.png" />
+        <img src="/imgs/result-share-btn.8f8a56.png" />
+        <img src="/imgs/result-success-bg.2946cf.png" />
+        <img src="/imgs/reward-body.ec9229.png" />
+        <img src="/imgs/reward-header.230857.png" />
+        <img src="/imgs/reward-header-fail.0eacf2.png" />
+        <img src="/imgs/roll-bg.49dee6.png" />
+        <img src="/imgs/ROSMONTIS.22b1e1.png" />
+        <img src="/imgs/ROSMONTIS.f7cded.png" />
+        <img src="/imgs/sanity_tex.64a570.png" />
+        <img src="/imgs/share-back.9c0edc.png" />
+        <img src="/imgs/SHU.9870ed.png" />
+        <img src="/imgs/SHU.f8817e.png" />
+        <img src="/imgs/signature_wall.71962f.png" />
+        <img src="/imgs/signature_wall_blur.924486.png" />
+        <img src="/imgs/SILENCE.bcbdb6.png" />
+        <img src="/imgs/SILENCE.d32e0e.png" />
+        <img src="/imgs/SPECTER.6e3fe4.png" />
+        <img src="/imgs/SPECTER.d26d99.png" />
+        <img src="/imgs/staff.63d7bb.png" />
+        <img src="/imgs/staircase.410afe.png" />
+        <img src="/imgs/staircase_blur.acb9eb.png" />
+        <img src="/imgs/status_decrease.416073.png" />
+        <img src="/imgs/status_increase.3a89b1.png" />
+        <img src="/imgs/status_random.7af705.png" />
+        <img src="/imgs/SURTR.5744d0.png" />
+        <img src="/imgs/SURTR.70c07d.png" />
+        <img src="/imgs/tab_icon_collection.0ea57e.png" />
+        <img src="/imgs/tab_icon_collection_B.b5dcef.png" />
+        <img src="/imgs/tab_icon_status.a8be49.png" />
+        <img src="/imgs/tab_icon_status_B.e619d3.png" />
+        <img src="/imgs/tex_base.93aaa9.png" />
+        <img src="/imgs/texture.e323a7.png" />
+        <img src="/imgs/THORNS.43145c.png" />
+        <img src="/imgs/THORNS.5631ea.png" />
+        <img src="/imgs/title-back.d1a4ad.png" />
+        <img src="/imgs/title-cn.e0dd76.png" />
+        <img src="/imgs/title-en.71bb64.png" />
+        <img src="/imgs/unknown.d5df87.png" />
+        <img src="/imgs/unknown.d63c17.png" />
+        <img src="/imgs/user-base.9a9edd.png" />
+        <img src="/imgs/VULPISFOGLIA.9143f7.png" />
+        <img src="/imgs/VULPISFOGLIA.9e8f3c.png" />
+        <img src="/imgs/ZUOLE.8c17d6.png" />
+        <img src="/imgs/ZUOLE.f6b477.png" />
+    </div>
+</body>
+</html>
